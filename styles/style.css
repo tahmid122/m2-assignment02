@@ -24,6 +24,11 @@ section {
 .blue-color {
   color: rgba(93, 88, 239, 1);
 }
+.section-title {
+  font-size: 2.875rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
 /* navbar style */
 nav {
   margin: 0 140px;
@@ -110,10 +115,89 @@ nav {
 .banner-image img {
   width: 100%;
 }
+/* curriculum section */
+.curriculum {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  text-align: center;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  /* background-position: bottom right; */
+  background-size: cover;
+}
+.curriculum-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+.curriculum-card {
+  padding: 3.125rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.curriculum-card:nth-child(1) {
+  background: linear-gradient(#def5ff, #ffffff 40%);
+  border: 1px solid #def5ff;
+}
+.curriculum-card:nth-child(2) {
+  background: linear-gradient(#fff4dc, #ffffff 40%);
+  border: 1px solid #fff4dc;
+}
+.curriculum-card:nth-child(3) {
+  background: linear-gradient(#eee1ff, #ffffff 40%);
+  border: 1px solid #eee1ff;
+}
+.curriculum-card h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.curriculum-card p {
+  font-size: 0.9rem;
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(128, 128, 128, 1);
+}
+.curriculum-card img {
+  width: 100%;
+}
+.curriculum-card a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.arrow {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.arrow > div {
+  height: 3.76rem;
+  width: 3.76rem;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 @media screen and (max-width: 576px) {
   section {
     margin: 0;
     padding: 1rem;
+  }
+  .section-title {
+    font-size: 2.2rem;
   }
   nav {
     margin: 0;
@@ -138,6 +222,12 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .curriculum-card-container {
+    grid-template-columns: 1fr;
+  }
+  .arrow {
+    display: none;
   }
 }
 
@@ -168,5 +258,11 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+  .curriculum-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .arrow {
+    display: none;
   }
 }
