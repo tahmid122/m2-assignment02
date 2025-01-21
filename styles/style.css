@@ -296,6 +296,67 @@ nav {
 .badge5 {
   background-color: red;
 }
+/* footer section */
+footer {
+  padding: 120px 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(1, 172, 253, 1);
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+.footer-logo span {
+  font-size: 2.625rem;
+  line-height: 39px;
+  font-weight: bold;
+  color: white;
+}
+.footer-description p {
+  font-size: 1.25rem;
+  color: white;
+  margin-top: 2rem;
+}
+.footer-nav {
+  justify-self: center;
+}
+.footer-nav h5 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.footer-social h5 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.footer-menu ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+.footer-menu ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.social-container {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.social-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer-social {
+  justify-self: center;
+}
 @media screen and (max-width: 576px) {
   section {
     margin: 0;
@@ -357,6 +418,17 @@ nav {
   .story-card-description h5 {
     font-size: 0.7rem;
   }
+  footer {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 3rem 1rem;
+  }
+  .footer-nav {
+    justify-self: left;
+  }
+  .footer-social {
+    justify-self: left;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -414,5 +486,12 @@ nav {
   }
   .story-card-description h5 {
     font-size: 0.9rem;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 1rem;
+  }
+  .footer-social {
+    grid-column: span 2;
   }
 }
