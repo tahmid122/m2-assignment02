@@ -120,6 +120,7 @@ nav {
   background-color: black;
   border-radius: 12px;
   cursor: pointer;
+  border: none;
 }
 .banner-image img {
   width: 100%;
@@ -199,11 +200,19 @@ nav {
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.arrow > div:hover {
+  transition: all 0.3s;
+  background: black;
 }
 /* story section */
 
 .our-story {
-  background: linear-gradient(rgba(255, 255, 255, 0.228), #fea10142),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.228),
+      rgba(254, 161, 1, 0.29)
+    ),
     url("../assets/bg.png");
   background-position: center;
   background-size: cover;
@@ -372,7 +381,7 @@ footer {
     padding: 1rem;
   }
   .section-title {
-    font-size: 2.2rem;
+    font-size: 1.625rem;
   }
   nav {
     margin: 0;
@@ -398,6 +407,19 @@ footer {
     align-items: center;
     text-align: center;
   }
+  .banner-description h1 {
+    font-size: 2rem;
+  }
+  .banner-description p {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .banner-description button {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .curriculum-card-container {
     grid-template-columns: 1fr;
   }
@@ -414,6 +436,12 @@ footer {
 
   .story-card-description {
     padding: 1rem;
+  }
+  .story-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .item1 {
     display: none;
