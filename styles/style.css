@@ -423,6 +423,9 @@ footer {
   .curriculum-card-container {
     grid-template-columns: 1fr;
   }
+  .curriculum-card h4 {
+    font-size: 1.2rem;
+  }
   .arrow {
     display: none;
   }
@@ -466,6 +469,12 @@ footer {
   .footer-social {
     justify-self: left;
   }
+  .footer-description p {
+    font-size: 1rem;
+  }
+  .footer-menu li a {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -503,6 +512,7 @@ footer {
   .curriculum-card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .arrow {
     display: none;
   }
