@@ -29,6 +29,10 @@ section {
   font-weight: bold;
   margin-bottom: 5rem;
 }
+.padding {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
 /* navbar style */
 nav {
   margin: 0 140px;
@@ -122,7 +126,7 @@ nav {
   text-align: center;
   background-image: url("../assets/bg.png");
   background-repeat: no-repeat;
-  /* background-position: bottom right; */
+  background-position: center;
   background-size: cover;
 }
 .curriculum-card-container {
@@ -173,7 +177,7 @@ nav {
   text-decoration: none;
 }
 .arrow {
-  margin-top: 5rem;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +194,107 @@ nav {
   border-radius: 50%;
   font-size: 1.5rem;
   cursor: pointer;
+}
+/* story section */
+
+.our-story {
+  background: linear-gradient(rgba(255, 255, 255, 0.228), #fea10142),
+    url("../assets/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+.our-story-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+.item1 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.our-story-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+.story-card-description {
+  padding: 1.5rem 2rem;
+}
+.our-story-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.our-story-card h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.our-story-card p {
+  font-size: 0.9rem;
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  line-height: 28px;
+  color: rgba(128, 128, 128, 1);
+}
+.our-story-card img {
+  width: 100%;
+  object-fit: cover;
+}
+.our-story-container h2 {
+  text-align: center;
+}
+.story-button {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+}
+.story-btn {
+  padding: 0.625rem 3.75rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: black;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.story-card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.story-card-image {
+  position: relative;
+}
+.story-badge {
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  color: white;
+  font-family: "Raleway", serif;
+  border-radius: 50px;
+  font-weight: 500;
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+}
+.badge1 {
+  background-color: rgba(60, 216, 232, 1);
+}
+.badge2 {
+  background-color: rgba(149, 178, 38, 1);
+}
+.badge3 {
+  background-color: rgba(93, 88, 240, 1);
+}
+.badge4 {
+  background-color: orange;
+}
+.badge5 {
+  background-color: red;
 }
 @media screen and (max-width: 576px) {
   section {
@@ -229,6 +334,29 @@ nav {
   .arrow {
     display: none;
   }
+  .our-story {
+    padding: 1rem;
+  }
+  .our-story-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+  }
+
+  .story-card-description {
+    padding: 1rem;
+  }
+  .item1 {
+    display: none;
+  }
+  .story-badge {
+    padding: 0.3125rem 0.625rem;
+    font-size: 0.625rem;
+    left: 1rem;
+    bottom: -0.5rem;
+  }
+  .story-card-description h5 {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -264,5 +392,27 @@ nav {
   }
   .arrow {
     display: none;
+  }
+  .our-story {
+    padding: 1.25rem;
+  }
+  .our-story-card-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem;
+  }
+  .item1 {
+    display: none;
+  }
+  .story-badge {
+    padding: 0.3125rem 0.625rem;
+    font-size: 0.7rem;
+    left: 1rem;
+    bottom: -0.5rem;
+  }
+  .story-card-description {
+    padding: 1rem;
+  }
+  .story-card-description h5 {
+    font-size: 0.9rem;
   }
 }
