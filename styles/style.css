@@ -423,6 +423,9 @@ footer {
   .curriculum-card-container {
     grid-template-columns: 1fr;
   }
+  .curriculum-card {
+    padding: 2rem 1.75rem;
+  }
   .curriculum-card h4 {
     font-size: 1.2rem;
   }
