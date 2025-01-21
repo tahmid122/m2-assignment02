@@ -7,6 +7,11 @@
   box-sizing: border-box;
   font-family: "Quicksand", serif;
 }
+.marque-text {
+  font-weight: bold;
+  margin: 0 140px;
+  font-size: 1rem;
+}
 /* global styles */
 section {
   margin: 0 140px;
@@ -358,6 +363,10 @@ footer {
   justify-self: center;
 }
 @media screen and (max-width: 576px) {
+  .marque-text {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
   section {
     margin: 0;
     padding: 1rem;
@@ -432,6 +441,10 @@ footer {
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  .marque-text {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
   section {
     margin: 0;
     padding: 1rem;
